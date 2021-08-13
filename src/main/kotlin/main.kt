@@ -1,3 +1,6 @@
+import modelo.Cliente
+import modelo.SistemaInterno
+
 fun main() {
     println("Bem vindo ao Bytebank")
 

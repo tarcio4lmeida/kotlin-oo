@@ -1,3 +1,7 @@
+package modelo
+
+import modelo.FuncionarioAdmin
+
 class Diretor(
     nome: String,
     cpf: String,

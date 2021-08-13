@@ -1,3 +1,7 @@
+import modelo.Diretor
+import modelo.Gerente
+import modelo.SistemaInterno
+
 fun testaAutenticacao() {
     val diretora = Diretor(
         nome = "TArcio",
