@@ -11,6 +11,8 @@ fun main() {
     )
     val sistema = SistemaInterno()
     sistema.entra(admin = cliente, senha = 123456)
+
+    testaContasDiferentes()
 }
 
 
