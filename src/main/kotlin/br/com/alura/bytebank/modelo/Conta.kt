@@ -1,17 +1,20 @@
 package br.com.alura.bytebank.modelo
 
-var totalContas: Int = 0
-    private set
 abstract class Conta(
     var titular: Cliente,
     val numero: Int
-    ) {
+) {
     var saldo = 0.0
         protected set
 
+    companion object Contador {
+        var total = 0
+            private set
+    }
+
     init {
         println("criando conta")
-        totalContas++
+        total++
     }
 
     fun deposita(valor: Double) {
@@ -20,13 +23,13 @@ abstract class Conta(
 
     abstract fun saca(valor: Double)
 
-    fun transfere(destino: Conta, valor: Double) : Boolean {
+    fun transfere(destino: Conta, valor: Double): Boolean {
         if (saldo >= valor) {
             this.saldo -= valor
             destino.deposita(valor)
             return true
         }
-       return false
+        return false
     }
 }
 
@@ -39,8 +42,8 @@ class ContaCorrente(
 ) {
 
     override fun saca(valor: Double) {
-        val valorComTaxa = valor  + 0.1
-        if (this.saldo >= valorComTaxa){
+        val valorComTaxa = valor + 0.1
+        if (this.saldo >= valorComTaxa) {
             this.saldo -= valorComTaxa
         }
     }
@@ -54,7 +57,7 @@ class ContaPoupanca(
     numero = numero
 ) {
     override fun saca(valor: Double) {
-        if (this.saldo >= valor){
+        if (this.saldo >= valor) {
             this.saldo -= valor
         }
     }

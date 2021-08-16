@@ -26,7 +26,8 @@ fun main() {
     val contaPoupanca = ContaPoupanca(titular = cliente, numero = 1000)
     testaContasDiferentes()
 
-    println("Total de contas: ${totalContas}")
+    println("Total de contas c. object: ${Conta.total}")
+
 }
 
 
