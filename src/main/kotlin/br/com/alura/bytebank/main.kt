@@ -8,7 +8,9 @@ fun main() {
     println(endereco)
     println(enderecoNovo)
 
-    endereco.equals(enderecoNovo)
+    println(endereco.equals(enderecoNovo))
+    println(endereco.hashCode())
+    println(enderecoNovo.hashCode())
 }
 
 
