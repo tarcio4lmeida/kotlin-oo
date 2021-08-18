@@ -3,6 +3,7 @@ import br.com.alura.bytebank.exception.SaldoInsuficienteException
 import br.com.alura.bytebank.modelo.Cliente
 import br.com.alura.bytebank.modelo.ContaCorrente
 import br.com.alura.bytebank.modelo.ContaPoupanca
+import java.lang.Exception
 
 fun testaComportamentosConta() {
 
@@ -49,6 +50,9 @@ fun testaComportamentosConta() {
         e.printStackTrace()
     } catch (e: FalhaAutenticacaoException) {
         println("Falha na autenticacao")
+        e.printStackTrace()
+    } catch (e: Exception) { //sempre por ultimo
+        println("Erro desconhecido")
         e.printStackTrace()
     }
     println(contaAlex.saldo)
