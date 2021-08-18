@@ -1,4 +1,4 @@
-# kotlin-oo + paradigma funcional 
+# kotlin
 
 Aprendendo os fundamentos da linguagem kotlin
 > Primeiros passos e Orientação a Objetos
@@ -6,6 +6,3 @@ Aprendendo os fundamentos da linguagem kotlin
 > Recursos da linguagem com pacotes e composição
 > Lidando com exceptions e referências nulas
 
-> Coleções, arrays e listas
-> Collections: Set e Map
-> Recursos do paradigma funcional
