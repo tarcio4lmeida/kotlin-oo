@@ -1,8 +1,9 @@
 import br.com.alura.bytebank.modelo.Endereco
-import java.lang.NumberFormatException
 
 fun main() {
-    testaComportamentosConta()
+    var enderecoNulo: Endereco? = null
+    var enderecoNaoNulo : Endereco = enderecoNulo!!
+    enderecoNaoNulo.logradouro
 }
 
 
